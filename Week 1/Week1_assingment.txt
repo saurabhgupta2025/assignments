@@ -1,0 +1,92 @@
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v21.5 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ➤ SSH session to root@192.168.1.14                                   │
+    │   • Direct SSH      :  ✔                                             │
+    │   • SSH compression :  ✔                                             │
+    │   • SSH-browser     :  ✔                                             │
+    │   • X11-forwarding  :  ✘  (disabled or not supported by server)      │
+    │                                                                      │
+    │ ➤ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+Web console: https://saurabh:9090/
+
+Last login: Mon Sep  8 09:15:00 2025
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]# ls -ltr
+total 4
+-rw-------. 1 root root 1217 Aug 21 11:59 anaconda-ks.cfg
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]# mkdir Project_files
+[root@saurabh ~]#
+[root@saurabh ~]#
+[root@saurabh ~]# cd Project_files/
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# ls -ltr
+total 0
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# touch readme.txt
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# ls -ltr
+total 0
+-rw-rw-r--. 1 root root 0 Sep  8 10:13 readme.txt
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# copy readme.txt info.txt
+-bash: copy: command not found
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# cp readme.txt info.txt
+[root@saurabh Project_files]# mv info.txt /home/sgupta/
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# ls -ltr
+total 0
+-rw-rw-r--. 1 root root 0 Sep  8 10:13 readme.txt
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# rm readme.txt
+rm: remove regular empty file 'readme.txt'? y
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# pwd
+/root/Project_files
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# ls -la
+total 4
+drwxrwxr-x. 2 root root    6 Sep  8 10:16 .
+dr-xr-x---. 8 root root 4096 Sep  8 10:13 ..
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# df -h
+Filesystem                Size  Used Avail Use% Mounted on
+/dev/mapper/cs-root        17G  4.8G   13G  29% /
+devtmpfs                  4.0M     0  4.0M   0% /dev
+tmpfs                     837M  4.0K  837M   1% /dev/shm
+tmpfs                     335M  6.4M  329M   2% /run
+tmpfs                     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+/dev/sda2                 960M  417M  544M  44% /boot
+/dev/mapper/vgvol-lvdata  9.8G   24K  9.3G   1% /data
+tmpfs                     1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs                     168M  4.0K  168M   1% /run/user/0
+[root@saurabh Project_files]#
+[root@saurabh Project_files]#
+[root@saurabh Project_files]# cd ..
+[root@saurabh ~]# ls
+anaconda-ks.cfg  Project_files
+[root@saurabh ~]# du -hs Project_files
+0       Project_files
+[root@saurabh ~]#
